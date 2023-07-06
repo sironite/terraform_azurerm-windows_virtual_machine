@@ -27,7 +27,7 @@ variable "vm_size" {
 variable "secure_boot_enabled" {
   type        = bool
   description = "Whether or not secure boot is enabled on the virtual machine."
-  default     = true
+  default     = false
 }
 
 variable "enable_automatic_updates" {
@@ -93,6 +93,12 @@ variable "os_disk_name" {
   type        = string
   description = "The name of the OS disk for the virtual machine."
   default     = "osdisk"
+}
+
+variable "os_disk_storage_account_type" {
+  type        = string
+  description = "The storage account type for the OS disk for the virtual machine."
+  default     = "Premium_LRS"
 }
 
 variable "os_disk_size_gb" {
