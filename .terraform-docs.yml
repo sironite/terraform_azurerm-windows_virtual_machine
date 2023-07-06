@@ -8,9 +8,10 @@ content: |-
 
   # Usage - Module
 
-  ## Network Watcher Flow Log
+  ## Windows Virtual Machine
+
   ```hcl
-  {{ include "examples/network-watcher-flow-log-example/main.tf" }}
+  {{ include "examples/windows-vm-example/main.tf" }}
   ```
 
   {{ .Providers }}
