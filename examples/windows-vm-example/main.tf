@@ -11,7 +11,7 @@ module "windows_virtual_machine" {
   network_interface_ids = [
     "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/windows-vm-example/providers/Microsoft.Network/networkInterfaces/windows-vm-nic"
   ]
-  
+
   tags = {
     environment = "dev"
   }

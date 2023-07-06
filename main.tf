@@ -24,6 +24,7 @@ resource "azurerm_windows_virtual_machine" "this" {
     disk_size_gb           = var.os_disk_size_gb
     disk_encryption_set_id = var.disk_encryption_set_id
     caching                = var.os_disk_caching
+    storage_account_type   = var.os_disk_storage_account_type
   }
 
   source_image_reference {
