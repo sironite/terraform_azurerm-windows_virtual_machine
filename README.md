@@ -20,7 +20,7 @@ module "windows_virtual_machine" {
   network_interface_ids = [
     "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/windows-vm-example/providers/Microsoft.Network/networkInterfaces/windows-vm-nic"
   ]
-  
+
   tags = {
     environment = "dev"
   }
@@ -63,6 +63,7 @@ No modules.
 | os\_disk\_caching | The caching mode for the OS disk for the virtual machine. | `string` | no |
 | os\_disk\_name | The name of the OS disk for the virtual machine. | `string` | no |
 | os\_disk\_size\_gb | The size of the OS disk for the virtual machine. | `number` | no |
+| os\_disk\_storage\_account\_type | The storage account type for the OS disk for the virtual machine. | `string` | no |
 | patch\_assessment\_mode | The patch assessment mode for the virtual machine. | `string` | no |
 | patch\_mode | The patch mode for the virtual machine. | `string` | no |
 | provision\_vm\_agent | Whether or not the VM agent should be provisioned on the virtual machine. | `bool` | no |
